@@ -1,0 +1,558 @@
+@font-face {
+    font-family: Boiling;
+    src: url('../fonts/Boiling.ttf');
+}
+
+@font-face {
+    font-family: LondonTube;
+    src: url('../fonts/LondonTube.ttf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    background: #171717;
+}
+
+nav .logo img {
+    height: 30px;
+}
+
+nav ul#full-links {
+    margin-bottom: 0;
+}
+
+nav ul li {
+    display: inline;
+    padding-left: 40px;
+    font-family: LondonTube;
+    list-style: none;
+    color: #ffffff;
+}
+
+nav ul li img {
+    height: 30px;
+}
+
+nav ul.hamburger {
+    text-align: right;
+    display: none;
+}
+
+.megamenu {
+    background: #000000;
+    padding: 70px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+/* .megamenu .inner {
+    background: #0a0a0a;
+    height: -webkit-fill-available;
+} */
+
+/* .megamenu .inner {
+    display: flex;
+    align-items: center;
+} */
+
+.megamenu .inner ul li {
+    list-style: none;
+}
+
+.megamenu .inner ul li {
+    font-family: Boiling;
+}
+
+.megamenu .inner ul a li {
+    color: #ffffff !important;
+    font-size: 90px;
+    padding: 10px 0;
+    text-decoration: none;
+}
+
+.megamenu .inner ul a li:hover {
+    text-decoration: line-through;
+}
+
+.hidden {
+    display: none;
+}
+
+
+.social-links {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 50px;
+}
+
+.social-links ul {
+    margin-bottom: 0;
+}
+
+.social-links ul li {
+    list-style: none;
+    padding-top: 5px;
+}
+
+.social-links ul li a {
+    color: #9A9A9A;
+    font-size: 13px;
+    font-family: LondonTube;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+main .black {
+    background-color: #171717;
+    height: auto;
+}
+
+main .hero {
+    padding-top: 141px;
+}
+
+main .hero .container-lg {
+    height: calc(100vh - 141px);
+}
+
+main .hero .content {
+    display: flex;
+    align-items: center;
+}
+
+main .hero h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #ffffff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+main h2 {
+    color: #ffffff;
+}
+
+main .hero h2 span {
+    text-decoration: underline;
+}
+
+main .hero p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #C9C9C9;
+    letter-spacing: 1px;
+    line-height: 1.88;
+    padding: 40px 0;
+}
+
+h2 {
+    font-family: Boiling;
+    font-size: 55px !important;
+    letter-spacing: 1px;
+}
+
+main .img-bg {
+    width: 90%;
+    height: 70vh;
+    position: relative;
+    display: block;
+}
+
+main .img-bg::before {
+    content: "";
+    background-image: url('../images/topography-black.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+}
+
+main .img-bg::after {
+    content: "";
+    background-image: url('../images/nicole.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+    z-index: 1;
+    margin: 40px;
+}
+
+main .img-bg img {
+    width: 90%;
+    z-index: 1 !important;
+}
+
+.circle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+img.scroll {
+    height: 150px;
+    width: auto;
+    animation: rotation 10s infinite linear;
+    transform-origin: center;
+}
+
+img.arrow-scroll {
+    position: absolute;
+    height: auto;
+}
+
+main .about .container-lg {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+main .about .name {
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    letter-spacing: 2px;
+    line-height: 1.88;
+}
+
+main .about .name h3 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+main .about .name h4 {
+    font-size: 18px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+main .about p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #C9C9C9;
+    letter-spacing: 1px;
+    line-height: 1.88;
+}
+
+.link {
+    display: inline-block;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    font-family: LondonTube;
+    font-size: 14px;
+    letter-spacing: 1px;
+    background: transparent;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 35px;
+    margin-top: 20px;
+    transition: box-shadow 300ms;
+}
+
+.link:hover {
+    color: #ffffff;
+    box-shadow: 0 0px 10px 3px #ffffff82;
+}
+
+.section {
+    padding: 80px 0;
+}
+
+main .white h2 {
+    color: #000000;
+    margin-bottom: 60px;
+}
+
+.card-temp-l {
+    margin-bottom: 45px;
+}
+
+.card-temp-l .img img {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+.card-temp-l .card-bot,
+.card-temp-s .card-bot {
+    padding: 40px;
+}
+
+.card-bot h5 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 27px;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.card-bot .badge {
+    background: #F1F1F1 !important;
+    font-family: LondonTube;
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #9A9A9A;
+    padding: 10px 15px;
+    margin-right: 5px;
+}
+
+.card-bot p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #000000;
+    letter-spacing: 1px;
+    line-height: 1.88;
+    margin-top: 30px;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a .card-temp-s,
+a .card-temp-l  {
+    color: #000000;
+}
+
+a .card-temp-l {
+    transition: box-shadow 200ms;
+}
+
+a .card-temp-s:hover,
+a .card-temp-l:hover {
+    text-decoration: none;
+    color: #000000;
+    box-shadow: 0 10px 25px 5px rgba(0,0,0,.05);
+}
+
+.card-temp-s {
+    border: 1px solid rgba(223, 223, 223, 0.7);
+    margin-bottom: 45px;
+    transition: box-shadow 200ms;
+}
+
+.card-temp-s .img {
+    position: relative;
+    overflow: hidden;
+    padding: 40px;
+}
+
+.card-temp-s .img::before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.2;
+    background-image: url('../images/topography-white.png');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+}
+
+.card-temp-s .img img {
+    object-fit: cover;
+    width: 100%;
+    height: 225px;
+    position: relative;
+    z-index: 2;
+}
+
+.card-temp-s .card-bot .badge {
+    background: #F1F1F1 !important;
+    font-family: LondonTube;
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #9A9A9A;
+    padding: 10px 15px;
+}
+
+.resume {
+    margin-top: 65px;
+}
+
+.resume h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.resume .card-temp-s {
+    border: none;
+}
+
+.resume .card-temp-s .inner {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.resume .card-temp-s .img {
+    padding: 60px;
+}
+
+.resume p {
+    width: 55%;
+    margin: auto;
+}
+
+.resume .link {
+    color: #000000;
+    border: 1px solid #000000;
+    background: #ffffff;
+}
+
+.resume .link:hover {
+    box-shadow: 0 0px 10px 3px #0000003f;
+}
+
+.sm-cards .row {
+    padding: 0 !important;
+}
+
+footer {
+    color: #ffffff;
+    padding: 50px;
+}
+
+footer p {
+    font-family: 'Poppins', sans-serif;
+}
+
+footer .inner {
+    margin: 80px 0;
+}
+
+footer .email p {
+    width: 80%;
+}
+
+footer h5 {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #c9c9c9;
+}
+
+footer .address {
+    margin-top: 50px;
+}
+
+footer .phone,
+footer .address {
+    color: #c9c9c9;
+}
+
+footer h3,
+footer h5 {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+footer .link {
+    text-transform: lowercase;
+}
+
+footer .subfooter .copyright {
+    text-align: center;
+}
+
+footer .subfooter .update {
+    text-align: right;
+}
+
+footer .subfooter p {
+    margin-bottom: 0;
+    color: #9A9A9A;
+    font-size: 13px;
+    font-family: LondonTube;
+    letter-spacing: 1px;
+}
+
+footer .address img {
+    height: 35px;
+    padding-right: 15px;
+    transition: opacity 200ms;
+}
+
+footer .address img:hover {
+    opacity: 0.6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+        transform-origin: center;
+    }
+
+    to {
+        transform: rotate(359deg);
+        transform-origin: center;
+    }
+}

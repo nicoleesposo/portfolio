@@ -1,0 +1,202 @@
+@media (max-width: 1199.98px) {
+    h2 {
+        font-size: 50px !important;
+    }
+
+    main .hero p {
+        padding: 15px 0;
+        font-size: 14px;
+    }
+
+    main .img-bg {
+        width: 100%;
+    }
+
+    img.scroll {
+        width: 130px;
+    }
+
+    main .hero h1 {
+        font-size: 16px;
+    }
+
+    img.arrow-scroll {
+        height: 30%;
+    }
+}
+
+@media (max-width: 991px) {
+    .card-bot h5 {
+        font-size: 23px;
+    }
+
+    .card-temp-s .card-bot .badge {
+        font-size: 13px;
+    }
+
+    .social-links {
+        padding: 30px;
+    }
+
+    .hero .row,
+    .about .row,
+    .works .row,
+    .resume .row {
+        padding: 0 35px;
+    }
+
+    nav {
+        padding: 25px 35px;
+    }
+
+    nav .logo img {
+        height: 25px;
+    }
+
+    main .hero {
+        padding-top: 87px;
+    }
+
+    main .hero .container-lg {
+        height: calc(100vh - 87px);
+        display: flex;
+        align-items: center;
+    }
+
+    .social-links {
+        display: none;
+    }
+
+    .resume p {
+        width: 70%;
+        margin: auto;
+    }
+
+    .card-temp-s .img img {
+        height: auto;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    main .img-bg {
+        height: 60vh;
+    }
+
+    main .img-bg::after {
+        margin: 25px;
+    }
+}
+
+@media (max-width: 767px) {
+    main .img-bg {
+        height: 75vh;
+    }
+
+    main .hero {
+        padding-top: 87px;
+    }
+
+    main .hero .container-lg {
+        height: auto;
+    }
+
+    .hero-info {
+        padding-top: 60px;
+        padding-bottom: 25px;
+    }
+
+    main .img-bg::after {
+        margin: 25px;
+    }
+
+    .resume p {
+        width: 80%;
+        margin: auto;
+    }
+
+    footer .phone {
+        margin-top: 60px;
+    }
+
+    footer .address {
+        margin-top: 25px;
+    }
+}
+
+@media (max-width: 767px) {
+    main .about .name {
+        justify-content: left;
+        margin-bottom: 30px;
+    }
+
+    h2 {
+        font-size: 60px !important;
+    }
+
+    footer .subfooter .update {
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    nav ul li {
+        padding-left: 15px;
+    }
+    
+    main .img-bg {
+        height: 60vh;
+    }
+
+    h2 {
+        font-size: 46px !important;
+    }
+
+    .hero .row,
+    .about .row,
+    .works .row,
+    .resume .row {
+        padding: 0 35px;
+    }
+
+    .resume p {
+        width: 100%;
+        margin: auto;
+    }
+
+    .card-temp-s .img {
+        padding: 23px;
+    }
+
+    p {
+        font-size: 13px !important;
+    }
+}
+
+@media (max-width: 500px) {
+    .hero-info {
+        padding: 60px 10px 25px 10px;
+    }
+
+    main .about .name h3 {
+        font-size: 35px;
+    }
+    
+    h2 {
+        font-size: 48px !important;
+    }
+
+    .hero .row,
+    .about .row,
+    .works .row,
+    .resume .row {
+        padding: 0 10px;
+    }
+
+    .card-temp-l .card-bot, .card-temp-s .card-bot {
+        padding: 20px;
+    }
+
+    footer {
+        padding: 40px 25px;
+    }
+}

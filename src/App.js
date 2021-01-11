@@ -1,11 +1,12 @@
-import Home from '../src/Home'
-import { HashRouter, Route, } from "react-router-dom";
+import Home from './Home'
+// import { HashRouter, Route, } from "react-router-dom";
 
 function App() {
   return (
-    <HashRouter basename={process.env.PUBLIC_URL}>
-      <Route exact path = '/' component = { Home } />
-    </HashRouter>
+    // <HashRouter basename={process.env.PUBLIC_URL}>
+    //   <Route exact path = '/' component = { Home } />
+    // </HashRouter>
+    <Home />
   );
 }
 

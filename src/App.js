@@ -1,4 +1,5 @@
 import Home from './Home'
+import Loader from './components/Loader'
 // import { HashRouter, Route, } from "react-router-dom";
 
 function App() {
@@ -6,7 +7,10 @@ function App() {
     // <HashRouter basename={process.env.PUBLIC_URL}>
     //   <Route exact path = '/' component = { Home } />
     // </HashRouter>
-    <Home />
+    <>               
+      <Loader />
+      <Home />
+    </>
   );
 }
 

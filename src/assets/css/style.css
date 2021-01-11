@@ -530,6 +530,25 @@ footer .address img:hover {
     opacity: 0.6;
 }
 
+.loader {
+    height: 100vh;
+    position: relative;
+}
+
+.loader .first {
+    height: 100vh;
+    background: #171717;
+    position: absolute;
+}
+
+.loader .inner {
+    height: 100vh;
+    background: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 
 

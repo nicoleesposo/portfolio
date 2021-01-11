@@ -6,7 +6,7 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 
 import '../src/assets/css/style.css'
 import '../src/assets/css/mediaqueries.css'
-import '../src/assets/css/kursor.css'
+import '../src/assets/css/loader.css'
 
 
 ReactDOM.render(

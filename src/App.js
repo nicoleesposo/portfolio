@@ -1,8 +1,11 @@
 import Home from '../src/Home'
+import { HashRouter, Route, } from "react-router-dom";
 
 function App() {
   return (
-    <Home />
+    <HashRouter basename={process.env.PUBLIC_URL}>
+      <Route exact path = '/' component = { Home } />
+    </HashRouter>
   );
 }
 
